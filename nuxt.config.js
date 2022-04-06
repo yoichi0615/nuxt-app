@@ -44,6 +44,26 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    [
+      '@nuxtjs/firebase',
+      {
+        // ここに構成スニペットの中身をペースト
+        config: {
+          apiKey: "AIzaSyAYbwZTrArx32s9gW9FTyJh9ErobSM4Sv8",
+          authDomain: "nuxt-scheduler-ecf10.firebaseapp.com",
+          projectId: "nuxt-scheduler-ecf10",
+          storageBucket: "nuxt-scheduler-ecf10.appspot.com",
+          messagingSenderId: "264926035523",
+          appId: "1:264926035523:web:59f840ae17a21952c85ef6",
+          measurementId: "G-L9HH1SS779"
+        },
+        // FirestoreとAnalyticsを有効にする
+        services: {
+          firestore: true,
+          analytics: true
+        }
+      }
+    ]
   ],
 
   // Vuetify module configuration: https://go.nuxtjs.dev/config-vuetify

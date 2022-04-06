@@ -2,15 +2,18 @@
   <v-list-item align="start">
     <v-list-item-content>
       <v-list-item-title>
-        2021/01/01
+        {{ date.toFormat('yyyy/MM/dd') }}
       </v-list-item-title>
       <v-list-item-subtitle>
-        19:00 ~
+        {{ date.toFormat('HH:mm') }} ~
       </v-list-item-subtitle>
     </v-list-item-content>
 
     <v-list-item-action>
-      <v-icon color="accent">
+      <v-icon
+        color="accent"
+        @click="onRemove()"
+      >
         mdi-delete
       </v-icon>
     </v-list-item-action>
@@ -28,7 +31,12 @@ export default {
        type: DateTime,
        // 必須項目の指定
        required: true
-     }
+     },
+      onRemove: {
+        type: Function,
+        default: () => {}
+      }
    }
 }
 </script>
+
