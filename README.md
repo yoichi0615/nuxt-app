@@ -1,5 +1,9 @@
 # app
 
+#URL
+https://nuxt-scheduler-ecf10.web.app
+
+
 ## Build Setup
 
 ```bash
