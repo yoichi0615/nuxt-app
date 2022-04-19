@@ -1,8 +1,8 @@
 # app
 
-[link](https://nuxt-scheduler-ecf10.web.app)
+_[link](https://nuxt-scheduler-ecf10.web.app)_
 
 
 # 使用技術
 
-Nuxt.js
+_Nuxt.js_
